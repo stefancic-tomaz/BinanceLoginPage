@@ -61,4 +61,4 @@ Projekt bi bilo mogoče v prihodnosti izboljšati z naprednejšo validacijo poda
 
 **Avtor:** Tomaž Štefančič  
 **Šolsko leto:** 2026/2027  
-**Vrsta projekta:** Šolska naloga – spletni obrazec
+**Vrsta projekta:** Spletni obrazec
