@@ -120,7 +120,7 @@ Poseben poudarek je bil na:
 - Izdelavi in oblikovanju pojavnih oken.
 - Odpravljanju napak in preverjanju delovanja spletne strani.
 
-## Avtor in namen
+## Avtor
 
 **Avtor:** Tomaž Štefančič  
 **Šolsko leto:** 2026/2027  
