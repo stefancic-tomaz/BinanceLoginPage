@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register - Referral | Binance - School Project</title>
+	<link rel="icon" type="image/svg+xml" href="../slike/favicon.svg">
+	<link rel="stylesheet" href="../css/vendor/sweetalert2.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/verification.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<script src="../javascript/vendor/sweetalert2.min.js" defer></script>
+	<script src="../javascript/skupno.js" defer></script>
+	<script src="../javascript/register.js" defer></script>
+</head>
+<body class="register-progress">
+	<main class="page">
+		<div class="login-wrapper">
+			<section class="login-box register-box" aria-labelledby="register-title">
+				<div class="logo-box">
+					<button class="logo-button" type="button" onclick="prikaziAvtorje()" aria-label="O projektu" title="O projektu">
+						<img src="../slike/Logo.png" alt="Binance" width="140" height="28">
+					</button>
+				</div>
+				<h1 id="register-title">Account created</h1>
+				<p class="verification-description">One last step. Add a referral ID or skip it.</p>
+				<form class="verification-form" onsubmit="return koncajRegistracijo()">
+					<div class="input-box">
+						<label for="referral">Referral ID (Optional)</label>
+						<input id="referral" type="text" maxlength="16" placeholder="Referral ID" autocomplete="off" spellcheck="false" aria-describedby="referral-error" oninput="pocistiRegisterNapako('referral')">
+					</div>
+					<p class="code-error" id="referral-error" role="alert"></p>
+					<button class="register-button" type="submit">Next</button>
+				</form>
+				<button class="code-help" type="button" onclick="preskociReferral()">Skip</button>
+				<a class="step-back" href="register-password.html">Back</a>
+			</section>
+			<a class="register-txt" href="index.html">Back to Log In</a>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="footer-links">
+			<button class="language-button" type="button" popovertarget="demo-info"><img src="../slike/globe.svg" alt="" width="16" height="16"> English</button>
+			<button type="button" popovertarget="demo-info">Cookies</button>
+			<button type="button" popovertarget="demo-info">Privacy</button>
+		</div>
+	</footer>
+	<aside class="demo-info" id="demo-info" popover lang="sl" aria-labelledby="demo-title">
+		<h2 id="demo-title">Samo za prikaz</h2>
+		<p>Testna referral koda je BINANCE2026. Lahko jo tudi preskočiš. Pravega računa ne ustvariš.</p>
+		<button type="button" popovertarget="demo-info" popovertargetaction="hide">Zapri</button>
+	</aside>
+</body>
+</html>

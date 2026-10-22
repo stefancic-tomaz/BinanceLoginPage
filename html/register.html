@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register | Binance - School Project</title>
+	<link rel="icon" type="image/svg+xml" href="../slike/favicon.svg">
+	<link rel="stylesheet" href="../css/vendor/sweetalert2.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/verification.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<script src="../javascript/vendor/sweetalert2.min.js" defer></script>
+	<script src="../javascript/skupno.js" defer></script>
+</head>
+<body>
+	<main class="page">
+		<section class="promo-section">
+			<h2>Up to <span>100 USD</span><br>Sign Up Rewards</h2>
+
+			<img class="promo-image" src="../slike/rewards.webp" alt="Sign up rewards">
+
+			<div class="promo-info">
+				<div class="promo-info-item">
+					<img src="../slike/trophy.svg" alt="" width="24" height="24">
+					<p>333,420,464 Users Trust Binance</p>
+				</div>
+
+				<div class="promo-info-item">
+					<img src="../slike/shield.svg" alt="" width="24" height="24">
+					<p>No.1 In Trading Volume &amp; Customer Asset</p>
+				</div>
+
+				<div class="promo-info-item">
+					<img src="../slike/safu.svg" alt="" width="24" height="24">
+					<div>
+						<p>1,000,000,000 USDC SAFU Fund</p>
+						<small>
+							<span>SAFU Wallet:</span>
+							<span class="wallet-address">0x420ef1f25563593aF5FE3f9b9d3bC56a8bd8c104</span>
+						</small>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="register-wrapper">
+			<div class="login-box register-box">
+				<div class="logo-box">
+					<button class="logo-button" type="button" onclick="prikaziAvtorje()" aria-label="O projektu" title="O projektu">
+						<img src="../slike/Logo.png" alt="Binance" width="140" height="28">
+					</button>
+				</div>
+
+				<div id="register-start">
+					<h1 tabindex="-1">Welcome to Binance</h1>
+
+					<form class="register-form" action="register-code.html">
+						<label class="input-label" for="email">Email/Phone number</label>
+						<input class="email-input" id="email" type="email" placeholder="Email/Phone (without country code)" maxlength="30" pattern="registertest@gmail[.]com" autocomplete="off" spellcheck="false" required>
+
+						<div class="terms">
+							<input id="terms-checkbox" type="checkbox" required>
+							<div class="terms-text">
+								<label for="terms-checkbox">By creating an account, I agree to Binance's</label>
+								<button class="privacy-link" type="button" popovertarget="demo-info">Privacy Notice.</button>
+							</div>
+						</div>
+
+						<button class="register-button" type="submit">Register</button>
+					</form>
+
+					<div class="divider">
+						<div class="divider-line"></div>
+						<span>or</span>
+						<div class="divider-line"></div>
+					</div>
+
+					<div class="social-buttons">
+						<button class="social-button" type="button" popovertarget="demo-info">
+							<img src="../slike/google.svg" alt="" width="16" height="16">
+							<span>Continue with Google</span>
+						</button>
+
+						<button class="social-button" type="button" popovertarget="demo-info">
+							<img src="../slike/apple.svg" alt="" width="16" height="16">
+							<span>Continue with Apple</span>
+						</button>
+
+						<button class="social-button" type="button" popovertarget="demo-info">
+							<img src="../slike/telegram.svg" alt="" width="16" height="16">
+							<span>Continue with Telegram</span>
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="account-links">
+				<button type="button" popovertarget="demo-info">Sign up as an entity</button>
+				<span>or</span>
+				<a href="index.html">Log in</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<div class="footer-links">
+			<button class="language-button" type="button" popovertarget="demo-info">
+				<img src="../slike/globe.svg" alt="" width="16" height="16"> English
+			</button>
+			<button type="button" popovertarget="demo-info">Cookies</button>
+			<button type="button" popovertarget="demo-info">Privacy</button>
+		</div>
+	</footer>
+
+	<button class="support-button" type="button" popovertarget="demo-info" aria-label="Support" title="Support">
+		<img src="../slike/support.svg" alt="" width="28" height="28">
+	</button>
+	<aside class="demo-info" id="demo-info" popover lang="sl" aria-labelledby="demo-title">
+		<h2 id="demo-title">Samo za prikaz</h2>
+		<p>Ta del ne deluje zares. Stran je za šolsko nalogo, podatkov ne pošlje ali shrani.</p>
+		<p>E-pošta: registertest@gmail.com<br>Koda: 123456<br>Geslo: Binance67!<br>Referral koda: BINANCE2026</p>
+		<button type="button" popovertarget="demo-info" popovertargetaction="hide">Zapri</button>
+	</aside>
+</body>
+</html>

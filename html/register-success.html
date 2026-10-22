@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Complete | Binance - School Project</title>
+	<link rel="icon" type="image/svg+xml" href="../slike/favicon.svg">
+	<link rel="stylesheet" href="../css/vendor/sweetalert2.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/verification.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<script src="../javascript/vendor/sweetalert2.min.js" defer></script>
+	<script src="../javascript/skupno.js" defer></script>
+</head>
+<body class="register-progress">
+	<main class="page">
+		<div class="login-wrapper">
+			<section class="login-box register-box" aria-labelledby="register-title">
+				<div class="logo-box">
+					<button class="logo-button" type="button" onclick="prikaziAvtorje()" aria-label="O projektu" title="O projektu">
+						<img src="../slike/Logo.png" alt="Binance" width="140" height="28">
+					</button>
+				</div>
+				<h1 id="register-title">You're all set!</h1>
+				<p class="verification-description" lang="sl">Testna registracija je končana. Pravi račun ni bil ustvarjen.</p>
+				<a class="login-button finish-link" href="index.html">Back to Log In</a>
+			</section>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="footer-links">
+			<button class="language-button" type="button" popovertarget="demo-info"><img src="../slike/globe.svg" alt="" width="16" height="16"> English</button>
+			<button type="button" popovertarget="demo-info">Cookies</button>
+			<button type="button" popovertarget="demo-info">Privacy</button>
+		</div>
+	</footer>
+	<aside class="demo-info" id="demo-info" popover lang="sl" aria-labelledby="demo-title">
+		<h2 id="demo-title">Samo za prikaz</h2>
+		<p>Šolski register je končan. Vneseni podatki se niso shranili ali poslali.</p>
+		<button type="button" popovertarget="demo-info" popovertargetaction="hide">Zapri</button>
+	</aside>
+</body>
+</html>
