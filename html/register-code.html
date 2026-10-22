@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register - Email Verification | Binance - School Project</title>
+	<link rel="icon" type="image/svg+xml" href="../slike/favicon.svg">
+	<link rel="stylesheet" href="../css/vendor/sweetalert2.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/verification.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<script src="../javascript/vendor/sweetalert2.min.js" defer></script>
+	<script src="../javascript/skupno.js" defer></script>
+	<script src="../javascript/register.js" defer></script>
+</head>
+<body class="register-progress">
+	<main class="page">
+		<div class="login-wrapper">
+			<section class="login-box register-box" aria-labelledby="register-title">
+				<div class="logo-box">
+					<button class="logo-button" type="button" onclick="prikaziAvtorje()" aria-label="O projektu" title="O projektu">
+						<img src="../slike/Logo.png" alt="Binance" width="140" height="28">
+					</button>
+				</div>
+				<h1 id="register-title">Email Verification</h1>
+				<p class="verification-description">Enter the 6-digit test code for <strong>registertest@gmail.com</strong>.</p>
+				<form class="verification-form" onsubmit="return preveriRegisterKodo()">
+					<div class="input-box">
+						<label for="register-code">Email Verification Code</label>
+						<div class="code-entry">
+							<input id="register-code" type="text" inputmode="numeric" minlength="6" maxlength="6" pattern="[0-9]{6}" placeholder="6-digit code" autocomplete="off" aria-describedby="register-code-error" oninput="pocistiRegisterNapako('register-code')" required>
+							<button class="get-code" type="button" onclick="prikaziTestnoKodo()">Get Code</button>
+						</div>
+					</div>
+					<p class="code-error" id="register-code-error" role="alert"></p>
+					<button class="register-button" type="submit">Submit</button>
+				</form>
+				<button class="code-help" type="button" onclick="prikaziTestnoKodo()">Didn't receive the code?</button>
+				<a class="step-back" href="register.html">Back</a>
+			</section>
+			<a class="register-txt" href="../index.html">Back to Log In</a>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="footer-links">
+			<button class="language-button" type="button" popovertarget="demo-info"><img src="../slike/globe.svg" alt="" width="16" height="16"> English</button>
+			<button type="button" popovertarget="demo-info">Cookies</button>
+			<button type="button" popovertarget="demo-info">Privacy</button>
+		</div>
+	</footer>
+	<aside class="demo-info" id="demo-info" popover lang="sl" aria-labelledby="demo-title">
+		<h2 id="demo-title">Samo za prikaz</h2>
+		<p>To je šolski primer. Uporabi kodo 123456. E-pošta se ne pošilja.</p>
+		<button type="button" popovertarget="demo-info" popovertargetaction="hide">Zapri</button>
+	</aside>
+</body>
+</html>
